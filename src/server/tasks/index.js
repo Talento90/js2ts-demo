@@ -1,11 +1,21 @@
 const TasksController = require("./controller");
 
+/**
+ * @typedef {import('../../database/memory')} MemoryDatabase
+ * @typedef {import('hapi').Server} Hapi.Server
+ */
+
+/**
+ * 
+ * @param {Hapi.Server} server 
+ * @param {MemoryDatabase} database 
+ */
 function register(server, database) {
   const controller = new TasksController(database);
 
   server.bind(controller);
 
-  server.route({
+  server.route({ 
     method: "GET",
     path: "/api/tasks",
     handler: controller.getAll

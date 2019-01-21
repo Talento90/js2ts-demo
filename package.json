@@ -4,8 +4,9 @@
   "description": "Migrate from JS to TS smoothly",
   "main": "src/index.js",
   "scripts": {
-    "start": "node src/index.js",
-    "lint": "eslint 'src' --fix"
+    "start": "node dist/index.js",
+    "lint": "eslint 'src' --fix",
+    "build": "tsc"
   },
   "repository": {
     "type": "git",
@@ -23,13 +24,16 @@
   },
   "homepage": "https://github.com/Talento90/js2ts-demo#readme",
   "dependencies": {
+    "@types/hapi": "^16.1.16",
     "hapi": "^16.7.0"
   },
   "devDependencies": {
+    "@types/node": "^10.12.18",
     "eslint": "^5.3.0",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-config-prettier": "^3.3.0",
     "eslint-plugin-prettier": "^3.0.1",
-    "prettier": "^1.15.3"
+    "prettier": "^1.15.3",
+    "typescript": "^3.2.4"
   }
 }
