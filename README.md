@@ -8,6 +8,7 @@ Demonstration how to migrate a project from JavaScript to TypeScript
 - Setup tsconfig.json `node_modules/.bin/tsc --init`
 - Set the following compiler options: `"allowJs": true, "checkJs": true` 
 - Rename .js files to .ts
+- Fix errors and go to the previous step
 
 ### References
 
