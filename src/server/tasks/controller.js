@@ -37,8 +37,10 @@ class TasksController {
    * 
    */
   get(request, reply) {
-    const id = parseInt(request.params.id, 10);
+    const id = request.params.id;
     const task = this.db.get(id);
+
+    console.log(`Getting task ${task.name}`)
 
     reply(task);
   }

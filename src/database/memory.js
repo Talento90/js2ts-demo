@@ -28,7 +28,7 @@ class MemoryDatabase {
    * 
    * @param {number} id Task Id 
    * 
-   * @return {Task} Return the specific Task
+   * @return {Task | undefined} Return the specific Task
    */
   get(id) {
     return this.db[id];

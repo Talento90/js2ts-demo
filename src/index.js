@@ -10,7 +10,7 @@ const db = new MemoryDatabase();
 
 db.insert({ name: "Homework", done: false });
 db.insert({ name: "Clean house", done: false });
-db.insert({ name: "Play Games", done: true });
+db.insert({ name: "Play Games", done: 1 });
 
 const server = createServer(serverConfigs, db);
 
