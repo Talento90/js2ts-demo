@@ -4,6 +4,7 @@
   "description": "Migrate from JS to TS smoothly",
   "main": "src/index.js",
   "scripts": {
+    "clean": "rm -rf dist",
     "start": "node dist/index.js",
     "build": "tsc",
     "build:watch": "tsc --watch"
